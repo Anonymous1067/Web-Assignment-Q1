@@ -1,0 +1,165 @@
+body
+{
+    font-family: sans-serif;
+    margin: 7rem 12rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-radius: 10px;
+}
+
+header
+{
+    margin: 0;
+    background: url('/assets/wave.svg'), darkblue;
+    background-size: cover;
+    padding: 3rem 5rem 2rem 5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h1
+{
+    color: #fc7d2d;
+    font-size: xxx-large;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+
+h3
+{
+    font-weight: 900;
+    font-size: larger;
+    color: darkblue;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+li
+{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+hr
+{
+    border: 3px solid #fc7d2d;
+    margin-top: 1.5rem;
+}
+
+#contents
+{
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+#experience
+{
+    list-style-type: none;
+    padding: 0;
+    font-weight: light;
+    margin: 0;
+}
+
+.education-desc 
+{
+    list-style: none;
+    margin-left: -20px;
+}
+
+.education-desc li
+{
+    margin-top: -5px;
+}
+
+.education-desc li::before 
+{
+    content: "\2022"; 
+    color: #fc7d2d;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.m-top
+{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p
+{
+    margin: 0 2px;
+}
+
+.blue-dot
+{
+    border-radius: 100%;
+    background-color: darkblue;
+    margin: 0 2px;
+    padding: 0.18rem 0.18rem;
+    font-size: xx-small;
+    margin: 2px 4px;
+    display: inline-block;
+}
+
+.date
+{
+    font-size: smaller;
+    color: darkblue;
+}
+
+article
+{
+    padding: 0 1px;
+}
+
+#contact
+{
+    background-color: #fc7d2d;
+    color: darkblue;
+    padding: 0 1rem;
+    border-bottom-right-radius: 5px;
+}
+
+.profile
+{
+    width: 70%;
+    border: 4px solid white;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.contact-item
+{
+    display: flex;
+    align-items: center;
+}
+
+#skill-list
+{
+    padding: 0 1rem;
+    font-size: 15px;
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+em
+{
+    float: right;
+    padding-top: 1px;
+}
