@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.application-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+h2 {
+    color: #000000;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: calc(100% - 22px); 
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group select,
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input-group select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.input-group:last-of-type {
+    margin-bottom: 0;
+}
+.employment-info {
+    margin-bottom: 20px;
+}
+
+.employment-info label {
+    display:block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.employment-info input[type="text"],
+.employment-info input[type="date"],
+.employment-info textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.employment-info textarea {
+    height: 100px;
+}
+
+.employment-info .info-container {
+    margin-bottom: 10px;
+}
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.skill-info label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.skill-info input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.skill-info input[type="text"]:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.availability-container {
+    display: flex;
+    gap: 20px;
+}
+
+.availability-info {
+    flex: 1;
+}
+
+.availability-relocate {
+    margin-top: 20px;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+    color: #555;
+}
+
+.availability-container select,
+.availability-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.reference {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.reference label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+.reference input[type="text"],
+.reference input[type="tel"],
+.reference input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Additional Questions */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+textarea {
+    width: calc(100% - 22px); 
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 0;
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+textarea::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+
+
+.checkbox-container {
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox-container label {
+    display: inline-block;
+    vertical-align: middle;
+    color: #555;
+    font-size: 14px;
+}
+
+.checkbox-container input[type="checkbox"]:focus + label {
+    outline: 1px solid #4caf50; /* Change focus outline color */
+}
+
+.checkbox-container input[type="checkbox"]:checked + label {
+    color: #4caf50; /* Change color of label when checkbox is checked */
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#applicationsTable {
+    display: none;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#applicationsTable th, #applicationsTable td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+#applicationsTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tableBody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#tableBody tr:hover {
+    background-color: #ffffff;
+}
+
+
+button {
+    padding: 10px 20px; 
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 auto; 
+    display: block; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+    margin-right: 890px;
+}
+
+button:last-child {
+    margin-bottom: 10px; 
+}
+
+

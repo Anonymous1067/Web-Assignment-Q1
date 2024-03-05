@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="Q3.css">
+    <script src="Q3.js"></script>
+
+</head>
+
+<body>
+
+    <form id="jobApplicationForm" class="application-form">
+        <h2>Job Application Form</h2>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+            <!-- Contact Information -->
+            <legend>Contact Information</legend>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
+
+
+            <!-- Address -->
+
+            <legend>Address</legend>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" placeholder="Street" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="City" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="State" required>
+
+            <label for="zipCode">ZIP Code:</label>
+            <input type="text" id="zipCode" name="zipCode" placeholder="ZIP Code" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Resume and Cover Letter</legend>
+
+            <label class="label-header">Resume and Cover Letter:</label>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4" required></textarea>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <div class="info-container"></div>
+            <div class="input-group">
+                <label for="educationLevel">Education Level:</label>
+                <select id="educationLevel" name="educationLevel" required>
+                    <option value="none">Select</option>
+                    <option value="highSchool">High School</option>
+                    <option value="bachelors">Bachelors</option>
+                    <option value="masters">Masters</option>
+                    <option value="phd">P.H.D.</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="university">Name of School/University:</label>
+                <input type="text" id="university" name="university" placeholder="FAST" required>
+            </div>
+            </div>
+
+            <div class="input-group">
+                <label for="major">Major/Area of Study:</label>
+                <input type="text" id="major" name="major" placeholder="Data Science" required>
+            </div>
+
+            <div class="input-group">
+                <label for="graduationYear">Graduation Year:</label>
+                <input type="date" id="graduationYear" name="graduationYear" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment History</legend>
+
+            <div class="employment-info">
+                <div class="info-container">
+                    <label for="previousJobTitle">Previous Job Title:</label>
+                    <input type="text" id="previousJobTitle" name="previousJobTitle" placeholder="Title">
+                </div>
+
+                <div class="info-container">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Company Name">
+                </div>
+
+                <div class="info-container">
+                    <label for="employmentStartDate">From:</label>
+                    <input type="date" id="employmentStartDate" name="employmentStartDate">
+                    <label for="employmentEndDate">To:</label>
+                    <input type="date" id="employmentEndDate" name="employmentEndDate">
+                </div>
+
+                <label for="jobResponsibilities">Job Responsibilities:</label>
+                <textarea id="jobResponsibilities" name="jobResponsibilities" rows="4"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+
+            <div class="skill-container">
+                <div class="skill-info">
+                    <label for="relevantSkills">Relevant Skills:</label>
+                    <input type="text" id="relevantSkills" name="relevantSkills" placeholder="Skills" required>
+                </div>
+
+                <div class="skill-info">
+                    <label for="certifications">Certifications:</label>
+                    <input type="text" id="certifications" name="certifications" placeholder="Certificates">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Availability</legend>
+
+            <div class="availability-container">
+                <div class="availability-info">
+                    <label for="availableStartDate">Available Start Date:</label>
+                    <input type="date" id="availableStartDate" name="availableStartDate" required>
+                </div>
+
+                <div class="availability-info">
+                    <label for="preferredWorkSchedule">Preferred Work Schedule:</label>
+                    <select id="preferredWorkSchedule" name="preferredWorkSchedule" required>
+                        <option value="none">Select</option>
+                        <option value="9am-5pm">9am-5pm</option>
+                        <option value="12pm-8pm">12pm-8pm</option>
+                        <option value="3pm-12am">3pm-12am</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="availability-relocate">
+                <label for="relocate">Willingness to Relocate:</label>
+                <input type="radio" id="relocate" name="relocate" required>
+                <span class="choice-radio">Yes</span>
+                <br>
+                <input type="radio" id="relocate" name="relocate" required>
+                <span class="choice-radio">No</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>References</legend>
+
+
+            <label for="referenceName">Reference Name:</label>
+            <input type="text" id="referenceName" name="referenceName" placeholder="Name" required>
+
+            <label for="referenceDesignation">Reference Designation:</label>
+            <input type="text" id="referenceDesignation" name="referenceDesignation" placeholder="Designation" required>
+
+            <label for="referencePhoneNumber">Reference Contact Information:</label>
+            <input type="tel" id="referencePhoneNumber" name="referencePhoneNumber" placeholder="Phone Number" required>
+
+            <label for="referenceEmailAddress">Reference Email Address:</label>
+            <input type="email" id="referenceEmailAddress" name="referenceEmailAddress" placeholder="Email Address"
+                required>
+
+
+            <label for="relationshipToApplicant">Relationship to Applicant:</label>
+            <input type="text" id="relationshipToApplicant" name="relationshipToApplicant" placeholder="Relation"
+                required>
+        </fieldset>
+
+        <!-- Additional Questions -->
+        <fieldset>
+            <legend>Additional Questions:</legend>
+
+            <label for="whyWorkHere">Why do you want to work for this company?</label>
+            <textarea id="whyWorkHere" name="whyWorkHere" rows="4" required></textarea>
+        </fieldset>
+
+        <!-- Consent and Agreement -->
+        <label class="label-header">Consent and Agreement:</label>
+        <div class="checkbox-container">
+            <input type="checkbox" id="termsConditions" name="termsConditions" required>
+            <label for="termsConditions">I agree to the terms and conditions</label>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+            <label for="privacyPolicy">I acknowledge the privacy policy</label>
+        </div> 
+
+    </form>
+
+    <button id="submitButton">Submit</button>
+
+    <button id="viewTableBtn" style="display: none;">View Applications as Table</button>
+
+    <table id="applicationsTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+
+                <th>Street</th>
+                <th>City</th>
+                <th>State</th>
+                <th>ZIP Code</th>
+
+                <th>Resume</th>
+                <th>Cover Letter</th>
+
+                <th>Education Level</th>
+                <th>University</th>
+                <th>Major</th>
+                <th>Graduation Year</th>
+
+                <th>Previous Job Title</th>
+                <th>Company Name</th>
+                <th>Employment Start Date</th>
+                <th>Employment End Date</th>
+                <th>Job Responsibilities</th>
+
+                <th>Relevant Skills</th>
+                <th>Certifications</th>
+
+                <th>Available Start Date</th>
+                <th>Preferred Work Schedule</th>
+                <th>Willingness to Relocate</th>
+
+                <th>Reference Name</th>
+                <th>Reference Designation</th>
+                <th>Reference Phone Number</th>
+                <th>Reference Email Address</th>
+                <th>Relationship to Applicant</th>
+
+                <th>Why Work Here</th>
+                <th>Terms and Conditions</th>
+                <th>Privacy Policy</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</body>
+</html>
